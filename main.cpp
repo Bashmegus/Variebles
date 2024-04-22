@@ -2,15 +2,13 @@
 using namespace std;
 
 int main() {
-	double length, height, width, V;
-	cout << "Enter length: ";
-	cin >> length;
-	cout << "Enter width: ";
-	cin >> width;
-	cout << "Enter height: ";
-	cin >> height;
-	V = length * width * height;
-	cout << "Total V of Paralelepiped is equal to " << V << endl;
+	double scale, distancecm, distancekm;
+	cout << "Enter map scale(km): ";
+	cin >> scale;
+	cout << "Enter distance(cm): ";
+	cin >> distancecm;
+	distancekm = distancecm * scale;
+	cout << "Total distance between cities is equal to " << distancekm << endl;
 	system("pause");
 	return 0;
 }
