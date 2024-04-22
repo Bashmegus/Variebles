@@ -1,11 +1,14 @@
+#define _USE_MATH_DEFINES
 #include <iostream>
-#include <Windows.h>
+#include <cmath>
 using namespace std;
 
 int main() {
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-
-	SetConsoleTextAttribute(hConsole, 7);
+	double d;
+	int i;
+	cin >> d;
+	i = d;
+	cout << i << endl;
 	system("pause");
 	return 0;
 }
