@@ -4,11 +4,12 @@
 using namespace std;
 
 int main() {
-	double d;
-	int i;
-	cin >> d;
-	i = d;
-	cout << i << endl;
+	int totaldays, days, weeks;
+	cout << "Enter Amount Of Days: ";
+	cin >> totaldays;
+	weeks = totaldays / 7;
+	days = totaldays - weeks * 7;
+	cout << "Weeks: " << weeks << ", Days: " << days << endl;
 	system("pause");
 	return 0;
 }
