@@ -43,7 +43,7 @@ int main() {
     }
     double refuelRequired = totalFuelRequired - fuelTankSize;
     if (refuelRequired > fuelTankSize) {
-        cout << "Imposible to fly from point B to point A" << endl;
+        cout << "Imposible to fly from point B to point C" << endl;
         return 0;
     }
     if (refuelRequired <= 0) {
