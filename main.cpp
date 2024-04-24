@@ -31,22 +31,17 @@ int main() {
     cin >> cargoWeight;
 
     double fuelConsumption = calculateFuelConsumption(cargoWeight);
-
     if (fuelConsumption == -1) {
         cout << "Too heavy cargo" << endl;
         return 0;
     }
-
     double abFuelRequired = distanceAb * fuelConsumption;
     double totalFuelRequired = (distanceAb + distanceBc) * fuelConsumption;
-
     if (abFuelRequired > fuelTankSize) {
         cout << "Impossible to fly from point A to point B" << abFuelRequired << endl;
         return 0;
     }
-
     double refuelRequired = totalFuelRequired - fuelTankSize;
-
     if (refuelRequired > fuelTankSize) {
         cout << "Imposible to fly from point B to point A" << endl;
         return 0;
