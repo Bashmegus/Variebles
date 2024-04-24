@@ -2,13 +2,11 @@
 using namespace std;
 
 int main() {
-    double money;
-    int grn, cop;
-    cout << "Enter money: ";
-    cin >> money;
-    grn = money;
-    cop = (money - grn) * 100;
-    cout << grn << " grivnas, " << cop << " copiyok, " << endl;
+    int number;
+    cout << "Enter number: ";
+    cin >> number;
+    string resoult = (number % 2 == 0 ? "Number is Parne" : "Number is not Parne");
+    cout << resoult << endl;
     system("Pause");
     return 0;
 }
